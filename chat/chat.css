@@ -1,0 +1,7 @@
+.mess:nth-child(odd) {
+    background-color: rgb(163, 163, 245);
+}
+
+.mess:nth-child(even) {
+    background-color: rgb(245, 115, 115);
+}
