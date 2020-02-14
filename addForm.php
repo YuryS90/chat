@@ -11,19 +11,22 @@
 <body>
     <?php
 
+    include('config.php');
+
     $ban = file("ban.txt");
 
     if (in_array($_SERVER['REMOTE_ADDR'], $ban)) {
-        echo "BANNED";     
-    }
-    else {
-        file_put_contents("chat.txt", $_SERVER['HTTP_USER_AGENT'] . " : " . $_SERVER['REMOTE_ADDR'] . " : " . $_POST['name'] . " : " . $_POST['mess'] . "\n", FILE_APPEND);
+        echo "BANNED";
+    } elseif (!empty($_POST['mess']) && !empty($_POST['name'])) {
+        file_put_contents("chat.txt", $_SERVER['HTTP_USER_AGENT'] . $separator .
+            $_SERVER['REMOTE_ADDR'] . $separator . $_POST['name'] . $separator .
+            $_POST['mess'] . "\n", FILE_APPEND);
     }
     ?>
-    
+
     <form action="?" method="POST">
-        
-        <input type="text" name="name" value="<?=$_POST['name']?>" placeholder="ВАше имя">
+
+        <input type="text" name="name" value="<?= $_POST['name'] ?>" placeholder="ВАше имя">
         <input type="text" name="mess" placeholder="Введите сообщение">
 
         <input class="submit" type="submit" value="chat">
