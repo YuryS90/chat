@@ -10,11 +10,14 @@
 
 <body>
     <?php
-    if (($_SERVER['REMOTE_ADDR'] != "128.0.0.1") && (!empty($_POST['mess']))) {
-        file_put_contents("chat.txt", $_SERVER['HTTP_USER_AGENT'] . " : " . $_SERVER['REMOTE_ADDR'] . " : " . $_POST['name'] . " : " . $_POST['mess'] . "\n", FILE_APPEND);
+
+    $ban = file("ban.txt");
+
+    if (in_array($_SERVER['REMOTE_ADDR'], $ban)) {
+        echo "BANNED";     
     }
     else {
-        echo "BANNED";
+        file_put_contents("chat.txt", $_SERVER['HTTP_USER_AGENT'] . " : " . $_SERVER['REMOTE_ADDR'] . " : " . $_POST['name'] . " : " . $_POST['mess'] . "\n", FILE_APPEND);
     }
     ?>
     
