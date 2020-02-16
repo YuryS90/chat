@@ -16,11 +16,13 @@
 
         <?php
 
+        include('config.php');
+
         $mess_arr = file("chat.txt");
 
         foreach ($mess_arr as $value) {
 
-            $chat = explode(" : ", $value);
+            $chat = explode($separator, $value);
             echo "<div class='mess'>$chat[2] : $chat[3]</div>";
         }
 
