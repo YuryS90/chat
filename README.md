@@ -1,0 +1,1 @@
+как убрать на хостинге в поле имени <b>Notice</b>:  Undefined index: name in <b>/storage/ssd1/821/12553821/public_html/addForm.php</b> on line <b>29</b><br />???? Что она озаначает?

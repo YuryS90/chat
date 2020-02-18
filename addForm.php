@@ -13,13 +13,15 @@
 
     include('config.php');
 
+    $timeMess = date("Y-m-d H:i:m"); 
     $ban = file("ban.txt");
 
     if (in_array($_SERVER['REMOTE_ADDR'], $ban)) {
         echo "BANNED";
     } elseif (!empty($_POST['mess']) && !empty($_POST['name'])) {
         file_put_contents("chat.txt", $_SERVER['HTTP_USER_AGENT'] . $separator .
-            $_SERVER['REMOTE_ADDR'] . $separator . $_POST['name'] . $separator .
+            $_SERVER['REMOTE_ADDR'] . $separator . $timeMess . $separator . 
+            $_POST['name'] . $separator .
             $_POST['mess'] . "\n", FILE_APPEND);
     }
     ?>

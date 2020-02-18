@@ -1,5 +1,5 @@
 <?php
 
-$separator = "< >";
+$separator = " < > ";
 
 ?>
