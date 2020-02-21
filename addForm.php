@@ -28,7 +28,7 @@
 
     <form action="?" method="POST">
 
-        <input type="text" name="name" value="<?= $_POST['name'] ?>" placeholder="ВАше имя">
+        <input type="text" name="name" value="<?= !empty($_POST['name']) ? $_POST['name'] : "" ?>" placeholder="ВАше имя">
         <input type="text" name="mess" placeholder="Введите сообщение">
 
         <input class="submit" type="submit" value="chat">
