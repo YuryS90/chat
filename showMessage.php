@@ -26,7 +26,7 @@
             // print_r($chat);
             echo "<div class='mess'>" .
             $chat[2] . " | " . $chat[3] . " : " . 
-            url(cens(md(bb_code(smile(htmlspecialchars($chat[4])))))) .
+            smile(url(cens(md(bb_code(htmlspecialchars($chat[4])))))) .
             "</div>";
             
         }
