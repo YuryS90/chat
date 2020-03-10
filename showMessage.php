@@ -17,12 +17,18 @@
         <?php
 
         include('config.php');
+        include('fun.php');
 
         $mess_arr = file("chat.txt");
 
         foreach ($mess_arr as $value) {
             $chat = explode($separator, $value);
-            echo "<div class='mess'>$chat[2] : $chat[3] : $chat[4]</div>";
+            // print_r($chat);
+            echo "<div class='mess'>" .
+            $chat[2] . " | " . $chat[3] . " : " . 
+            url(cens(md(bb_code(smile(htmlspecialchars($chat[4])))))) .
+            "</div>";
+            
         }
 
         ?>
