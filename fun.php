@@ -58,20 +58,31 @@ function md($text) {
     return preg_replace($arrPat, $arrRep, $text);
 }
 
-function url($img) {
+function url_img($img) {
     $arrPat = [
         '/https\:\/\/.*\.jpg|png|gif/i',
-        // '/https\:\/\/.*/',
-        
     ];
 
     $arrRep =  [
-        
-        "<img src='$0'>",
-        // "<a href='$0'>click me</a>"
-       
-
+  
+        "<img src='$0'>",    
     ];
 
     return preg_replace($arrPat, $arrRep, $img);
 }
+
+// function url_link($link) { // не может перейти по ссылке
+//     $arrPat = [
+        
+//         '/https\:\/\/.*/',
+        
+//     ];
+
+//     $arrRep =  [
+              
+//         "<a href='$0'>перейти по ссылке</a>"
+       
+//     ];
+
+//     return preg_replace($arrPat, $arrRep, $link);
+// }
