@@ -16,20 +16,29 @@
 
         <?php
 
-        include 'config.php';
-        include 'fun.php';
+        include('config.php');
+        include('funb.php');
 
-        $mess_arr = file("chat.txt");
+        foreach (readXML('chat.xml') as $value) {
+            $date = $value["date"];
+            $name = $value["name"];
+            $mess = $value["mess"];
+            $string = "$date $name: $mess";
 
-        foreach ($mess_arr as $value) {
-            $chat = explode($separator, $value);
-            // print_r($chat);
-            echo "<div class='mess'>" .
-            $chat[2] . " | " . $chat[3] . " : " . 
-            smile(url_img(cens(md(bb_code(htmlspecialchars($chat[4])))))) .
-            "</div>";
-            
+            echo "<div class='mess'>" . smile(url_img(cens(md(bb_code(htmlspecialchars($string)))))) . "<br></div>";
         }
+
+        // $mess_arr = file("chat.txt");
+
+        // foreach ($mess_arr as $value) {
+        //     $chat = explode($separator, $value);
+        //     // print_r($chat);
+        //     echo "<div class='mess'>" .
+        //     $chat[2] . " | " . $chat[3] . " : " . 
+        //     smile(url_img(cens(md(bb_code(htmlspecialchars($chat[4])))))) .
+        //     "</div>";
+            
+        // }
 
         ?>
 

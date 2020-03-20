@@ -86,3 +86,41 @@ function url_img($img) {
 
 //     return preg_replace($arrPat, $arrRep, $link);
 // }
+
+
+function saveXML($userAgent, $remoteAddr, $name, $mess, $date)
+{
+    $str = <<<XML
+    \n<msg>
+    <userAgent>$userAgent</userAgent>
+    <addr>$remoteAddr</addr>
+    <name>$name</name>
+    <mess>$mess</mess>
+    <date>$date</date>
+    </msg>
+XML;
+
+    return file_put_contents('chat.xml', $str, FILE_APPEND);
+}
+
+
+function readXML($f)
+{
+
+    preg_match_all(
+        '/<msg>.*?<userAgent>(.*?)<\/userAgent>.*?<addr>(.*?)<\/addr>.*?<name>(.*?)<\/name>.*?<mess>(.*?)<\/mess>.*?<date>(.*?)<\/date>.*?<\/msg>/uis',
+        file_get_contents($f), $matches
+    );
+  
+    $arr = [];
+
+    foreach ($matches[1] as $key => $value) {  
+        $arr[$key]['userAgent'] = $value;
+        $arr[$key]['addr'] = $matches[2][$key];
+        $arr[$key]['name'] = $matches[3][$key];
+        $arr[$key]['mess'] = $matches[4][$key];
+        $arr[$key]['date'] = $matches[5][$key];
+    }
+
+    return $arr;
+}

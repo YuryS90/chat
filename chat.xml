@@ -1,0 +1,47 @@
+<?xml?>
+<msg>
+	<userAgent>
+		$userAgent
+	</userAgent>
+	<addr>
+		$remoteAddr
+	</addr>
+	<name>
+		$name
+	</name>
+	<mess>
+		$mess
+	</mess>
+	<date>
+		$date
+	</date>
+</msg>
+    
+<msg>
+    <userAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36</userAgent>
+    <addr>127.0.0.1</addr>
+    <name>Алексей</name>
+    <mess>нормально</mess>
+    <date>2020-03-20 14:35:03</date>
+    </msg>    
+<msg>
+    <userAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36</userAgent>
+    <addr>127.0.0.1</addr>
+    <name>Юрий</name>
+    <mess>пошли</mess>
+    <date>2020-03-20 14:39:03</date>
+    </msg>    
+<msg>
+    <userAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36</userAgent>
+    <addr>127.0.0.1</addr>
+    <name>Юрий</name>
+    <mess>:)</mess>
+    <date>2020-03-20 14:39:03</date>
+    </msg>    
+<msg>
+    <userAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36</userAgent>
+    <addr>127.0.0.1</addr>
+    <name>Юрий</name>
+    <mess>:-)</mess>
+    <date>2020-03-20 15:11:03</date>
+    </msg>
