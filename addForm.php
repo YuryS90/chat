@@ -34,7 +34,9 @@
     <form action="?" method="POST">
 
         <input type="text" name="name" value="<?= !empty($_POST['name']) ? $_POST['name'] : "" ?>" placeholder="ВАше имя">
-        <input type="text" name="mess" placeholder="Введите сообщение">
+        <br>
+        <textarea type="text" style="width:200px; height:300px" name="mess" placeholder="Введите сообщение"></textarea>
+        
 
         <input class="submit" type="submit" value="chat">
     </form>

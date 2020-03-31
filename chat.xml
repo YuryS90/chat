@@ -1,47 +1,70 @@
-<?xml?>
+<?xml?>          
 <msg>
-	<userAgent>
-		$userAgent
-	</userAgent>
-	<addr>
-		$remoteAddr
-	</addr>
-	<name>
-		$name
-	</name>
-	<mess>
-		$mess
-	</mess>
-	<date>
-		$date
-	</date>
-</msg>
+    <userAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36</userAgent>
+    <addr>127.0.0.1</addr>
+    <name>gege</name>
+    <mess>https://docs.microsoft.com/en-us/visualstudio/releases/2019/media/2019_rc_logo.png</mess>
+    <date>2020-03-28 19:43:03</date>
+    </msg>    
+<msg>
+    <userAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36</userAgent>
+    <addr>127.0.0.1</addr>
+    <name>gege</name>
+    <mess>https://bipbap.ru/wp-content/uploads/2017/10/0_8eb56_842bba74_XL.jpg</mess>
+    <date>2020-03-28 19:45:03</date>
+    </msg>    
+<msg>
+    <userAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36</userAgent>
+    <addr>127.0.0.1</addr>
+    <name>Юрий</name>
+    <mess>вот картинка смотри
+https://docs.microsoft.com/en-us/visualstudio/releases/2019/media/2019_rc_logo.png
+
+нравиться
+
+
+</mess>
+
     
 <msg>
     <userAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36</userAgent>
     <addr>127.0.0.1</addr>
-    <name>Алексей</name>
-    <mess>нормально</mess>
-    <date>2020-03-20 14:35:03</date>
+    <name>Юрий</name>
+    <mess>афцафц</mess>
+    <date>2020-03-28 20:16:03</date>
     </msg>    
 <msg>
     <userAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36</userAgent>
     <addr>127.0.0.1</addr>
     <name>Юрий</name>
-    <mess>пошли</mess>
-    <date>2020-03-20 14:39:03</date>
+    <mess>фац</mess>
+    <date>2020-03-28 20:16:03</date>
     </msg>    
 <msg>
     <userAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36</userAgent>
     <addr>127.0.0.1</addr>
     <name>Юрий</name>
-    <mess>:)</mess>
-    <date>2020-03-20 14:39:03</date>
+    <mess>фац</mess>
+    <date>2020-03-28 20:16:03</date>
     </msg>    
 <msg>
     <userAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36</userAgent>
     <addr>127.0.0.1</addr>
     <name>Юрий</name>
-    <mess>:-)</mess>
-    <date>2020-03-20 15:11:03</date>
+    <mess>фац</mess>
+    <date>2020-03-28 20:16:03</date>
+    </msg>    
+<msg>
+    <userAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36</userAgent>
+    <addr>127.0.0.1</addr>
+    <name>Юрий</name>
+    <mess>ацф</mess>
+    <date>2020-03-28 20:18:03</date>
+    </msg>    
+<msg>
+    <userAgent>Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.149 Safari/537.36</userAgent>
+    <addr>127.0.0.1</addr>
+    <name>Юрий</name>
+    <mess>афц</mess>
+    <date>2020-03-28 20:18:03</date>
     </msg>

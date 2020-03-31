@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <meta http-equiv="refresh" content="0.5">
+    <meta http-equiv="refresh" content="20">
     <link rel="stylesheet" href="chat.css">
 </head>
 

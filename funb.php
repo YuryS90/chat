@@ -60,12 +60,13 @@ function md($text) {
 
 function url_img($img) {
     $arrPat = [
-        '/https\:\/\/.*\.jpg|png|gif/i',
+        '/https\:\/\/.*\.(png|jpg|jpeg|gif)/i',
+        '/http\:\/\/.*\.(png|jpg|jpeg|gif)/i',
     ];
 
     $arrRep =  [
   
-        "<img src='$0'>",    
+        "<img src='$0'>",
     ];
 
     return preg_replace($arrPat, $arrRep, $img);
